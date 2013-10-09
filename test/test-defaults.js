@@ -25,6 +25,8 @@ describe('Default Value', function () {
 
     assert.ok(cfg);
 
+    assert.deepEqual(cfg, provided);
+
     assert.equal(cfg.foo1, provided.foo1);
     assert.ok(!cfg.foo2);
     assert.equal(cfg.foo3, provided.foo3);
@@ -35,6 +37,8 @@ describe('Default Value', function () {
     var cfg = defaultValues({}, provided);
 
     assert.ok(cfg);
+
+    assert.deepEqual(cfg, provided);
 
     assert.equal(cfg.foo1, provided.foo1);
     assert.ok(!cfg.foo2);
@@ -47,6 +51,8 @@ describe('Default Value', function () {
 
     assert.ok(cfg);
 
+    assert.deepEqual(cfg, defaults);
+
     assert.equal(cfg.foo1, defaults.foo1);
     assert.equal(cfg.foo2, defaults.foo2);
     assert.equal(cfg.foo3, defaults.foo3);
@@ -57,6 +63,8 @@ describe('Default Value', function () {
     var cfg = defaultValues(defaults, {});
 
     assert.ok(cfg);
+
+    assert.deepEqual(cfg, defaults);
 
     assert.equal(cfg.foo1, defaults.foo1);
     assert.equal(cfg.foo2, defaults.foo2);
