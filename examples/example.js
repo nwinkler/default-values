@@ -9,7 +9,7 @@ var defaults = {
 
 var provided = {
   foo1: 'bar1',
-  foo3: 23
+  foo3: 2
 };
 
 var cfg = defaultValues(defaults, provided);
