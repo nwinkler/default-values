@@ -11,7 +11,7 @@ describe('Default Value', function () {
 
   var provided = {
     foo1: 'bar1',
-    foo3: 23
+    foo3: 2
   };
 
   it('should create a new object', function() {
