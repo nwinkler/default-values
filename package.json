@@ -1,0 +1,9 @@
+{
+  "name": "default-values",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
