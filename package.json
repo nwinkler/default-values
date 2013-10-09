@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "description": "A zero-dependency module for initializing an object with default properties",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nwinkler/default-values"
+    "url": "https://github.com/nwinkler/default-values.git"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "author": "Nils Winkler <nils@nilswinkler.com>",
   "license": "MIT",
