@@ -12,7 +12,7 @@ var provided = {
   foo3: 2
 };
 
-var cfg = defaultValues(defaults, provided);
+var cfg = defaultValues(provided, defaults);
 
 for (attr in cfg) {
   console.log(attr + ': ' + cfg[attr]);

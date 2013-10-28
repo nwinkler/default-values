@@ -1,6 +1,6 @@
 module.exports = exports = applyDefaults;
 
-function applyDefaults (defaultValues, providedValues) {
+function applyDefaults (providedValues, defaultValues) {
   var ret = {};
 
   copyProperties(providedValues, ret);

@@ -21,7 +21,7 @@ describe('Default Value', function () {
   });
 
   it('should use the provided values object without a provided default object', function() {
-    var cfg = defaultValues(undefined, provided);
+    var cfg = defaultValues(provided, undefined);
 
     assert.ok(cfg);
 
@@ -34,7 +34,7 @@ describe('Default Value', function () {
   });
 
   it('should use the provided values object with an empty default object', function() {
-    var cfg = defaultValues({}, provided);
+    var cfg = defaultValues(provided, {});
 
     assert.ok(cfg);
 
@@ -47,7 +47,7 @@ describe('Default Value', function () {
   });
 
   it('should use the default values object without a provided object', function() {
-    var cfg = defaultValues(defaults, undefined);
+    var cfg = defaultValues(undefined, defaults);
 
     assert.ok(cfg);
 
@@ -60,7 +60,7 @@ describe('Default Value', function () {
   });
 
   it('should use the default values object with an empty provided object', function() {
-    var cfg = defaultValues(defaults, {});
+    var cfg = defaultValues({}, defaults);
 
     assert.ok(cfg);
 
@@ -73,7 +73,7 @@ describe('Default Value', function () {
   });
 
   it('should merge the default values with the provided object', function() {
-    var cfg = defaultValues(defaults, provided);
+    var cfg = defaultValues(provided, defaults);
 
     assert.ok(cfg);
 
